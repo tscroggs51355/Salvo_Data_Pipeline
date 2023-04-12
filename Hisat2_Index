@@ -1,0 +1,7 @@
+hisat2_extract_splice_sites.py /scratch/tms51355/Salvo_2014_Data/HiSat2_Index/Maize_Reference_Jaime.gtf >Maize_V5.ss 
+
+hisat2_extract_exons.py /scratch/tms51355/Salvo_2014_Data/HiSat2_Index/Maize_Reference_Jaime.gtf >Maize_V5.exon
+
+hisat2-build --ss Maize_V5.ss --exon Maize_V5.exon /scratch/tms51355/Salvo_2014_Data/HiSat2_Index/Zm-B73-REFERENCE-NAM-5.0.fa Maize_V5_Hisat2_tran 
+
+
